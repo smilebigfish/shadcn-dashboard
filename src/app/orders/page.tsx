@@ -8,17 +8,7 @@ import React from 'react'
 
 type Props = {}
 
-const OrderPage = (props: Props) => {
-    return (
-        <div className="flex flex-col gap-5 w-full">
-            <PageTitle title="OrderPage" />
-            <DataTable columns={columns} data={TestData} />
-        </div>
-    )
-}
-
-
-export const columns: ColumnDef<any>[] = [
+const columns: ColumnDef<any>[] = [
     {
         accessorKey: "email",
         header: "Email",
@@ -57,5 +47,14 @@ export const columns: ColumnDef<any>[] = [
         header: "Address",
     },
 ]
+
+const OrderPage = (props: Props) => {
+    return (
+        <div className="flex flex-col gap-5 w-full">
+            <PageTitle title="OrderPage" />
+            <DataTable columns={columns} data={TestData} />
+        </div>
+    )
+}
 
 export default OrderPage

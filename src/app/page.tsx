@@ -6,7 +6,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
-import { BarChartView } from "@/components/overview";
+import { BarChartView } from "@/components/Overview";
 import { RecentSales } from "@/components/RecentSales";
 import { Activity, CreditCard, DollarSign, LucideIcon, Users } from "lucide-react";
 
